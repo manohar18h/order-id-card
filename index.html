@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>ID Card Generator</h1>
+   
+
+
+
+
+
+    <div class="input-container">
+        
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Customer Name</label>
+
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Certificate No</label>
+
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Date</label>
+
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Product Name</label>
+
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Product Weight</label>
+
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Product Karat</label>
+
+        <button type="submit">Generate ID Card</button>
+    </div>
+
+        
+   
+
+    <div id="idCardGrid"></div>
+
+    <button id="printButton" onclick="printIDCard()">Print ID Card</button>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate ID Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Certificate ID Card Generator</h1>
+    
+    <form id="idCardForm">
+        <div class="input-container">
+            <input type="text" id="customerName" required>
+            <label for="customerName">Customer Name</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="text" id="certificateNo" required>
+            <label for="certificateNo">Certificate No</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="date" id="date" required>
+            <label for="date">Date</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="text" id="productName" required>
+            <label for="productName">Product Name</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="text" id="productWeight" required>
+            <label for="productWeight">Product Weight</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="text" id="productKarat" required>
+            <label for="productKarat">Product Karat</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="number" id="goldPercentage" required>
+            <label for="goldPercentage">Gold %</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="number" id="silverPercentage" required>
+            <label for="silverPercentage">Silver %</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="number" id="copperPercentage" required>
+            <label for="copperPercentage">Copper %</label>
+        </div>
+    
+        <div class="input-container">
+            <input type="number" id="othersPercentage" required>
+            <label for="othersPercentage">Others %</label>
+        </div>
+    
+        <!-- Customer Image Upload -->
+        <label class="file-label">Customer Image:</label>
+        <input type="file" id="customerUpload" accept="image/*"><br>
+    
+        <button type="submit">Generate ID Card</button><br>
+    </form>
+    <div class="container-grid">
+    <div class="card-grid" id="idCardGrid"></div><br>
+</div><br><br><br><br>
+<button class="button"  id="printButton" onclick="printIDCard()">Print ID Card</button>
+
+
+
+
+
+</body>
+</html>

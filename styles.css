@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header h3 {
+height: 15px;
+background-color: black;
+color: white;
+margin: 0px;
+padding: 0px;
+}
+
+/* Floating Label Style */
+.input-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Move label up when input is focused or has text */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 10px;
+    font-size: 12px;
+    color: #007bff;
+    background: white;
+    padding: 0 5px;
+}
+
+/* Styling for File Upload Labels */
+.file-label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+.id-card {
+    width: 8.5cm;
+    height: 5.5cm;
+    border: 2px solid black;
+    padding: 3px;
+    background-color: white;
+    font-size: 6px; /* Reduced global font size */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Section */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: purple;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 6px;
+}
+
+.logo {
+    width: 28px;
+    height: 28px;
+}
+
+.qr-code {
+    width: 28px;
+    height: 28px;
+}
+
+/* Certificate Title */
+.certificate-title {
+    font-size: 8px; /* Reduced size */
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+/* Card Content */
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left section with customer details */
+.left-section {
+    width: 60%;
+    font-size: 2px; /* Further reduced text size */
+    line-height: 0; /* Reduce space between lines */
+
+    
+}
+
+.left-section td {
+    font-size: 8px;  /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    color: #333;       /* Set text color */
+    margin: 1px 0;     /* Adjust spacing */
+}
+
+.left-section table td:nth-child(2) {
+    font-weight: bold; /* Make values bold */
+    color: #333; /* Gold color */
+    font-size: 8px; /* Adjust font size */
+}
+
+
+/* Right section with profile image */
+.right-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 80px; /* Adjusted size */
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+/* Composition Section */
+/* Composition Section */
+.composition {
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 8px; /* Reduced size */
+    width: 60%;
+    color: red;
+    text-align: left; /* Align text to left */
+    padding: 1px; /* Add padding for better spacing */
+    margin-left: 2; /* Align to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure the content starts at the top */
+}
+
+.composition td {
+    font-size: 8px;  /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    margin: 1px 0;  
+    color: red;   
+}
+/* Vertical Line */
+.harizontal-line {
+    width: 60%; /* Adjust thickness */
+    margin-left: 1; /* Align to the left */
+    text-align: left; /* Align text to left */
+    background-color: black; /* Change color if needed */
+    height: 1px; /* Makes it stretch the entire section height */
+    margin: 0 10px; /* Adds spacing */
+}
+
+
+.composition table td:nth-child(2) {
+    font-weight: bold; /* Make values bold */
+    color: red; /* Gold color */
+    font-size: 8px; /* Adjust font size */
+}
+
+/* .composition p {
+    margin: 0;
+
+} */
+
+/* Footer */
+.footer-note {
+    font-size: 8px; /* Further reduced text size */
+    text-align: center;
+    background: purple;
+    margin-top: 2px;
+    border-top: 1px solid black;
+    padding-top: 1px;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 6px;
+}
+
+/* Table styling for compressed customer details */
+.card-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 2px; /* Reduced size */
+}
+
+.card-content td {
+    padding: 0px;
+    font-size: 2px;
+}
+
+.container-grid {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+}
+.card-grid {
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;  /* Optional: Center content inside the card */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Ensures the Print is Properly Sized */
+@media print {
+    @page {
+        size: 8.5cm 5.6cm;
+        margin: 0;
+    }
+    body * {
+        visibility: hidden;
+    }
+    .print-container, .print-container * {
+        visibility: visible;
+    }
+    .print-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8.5cm;
+        height: 5.5cm;
+    }
+}
+
+.button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    margin-top: 100px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    min-height: 2.5em;
+    min-width: 0;
+    outline: none;
+    margin-bottom: 500px;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .button:disabled {
+    pointer-events: none;
+   }
+   
+   .button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+   
+
+
