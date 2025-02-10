@@ -111,6 +111,7 @@ padding: 0px;
     font-size: 8px; /* Reduced size */
     font-weight: bold;
     color: red;
+    margin-top: -3px;
     text-align: center;
 }
 
@@ -124,10 +125,11 @@ padding: 0px;
 /* Left section with customer details */
 .left-section {
     width: 65%;
+    margin-top: -3px;
 }
 
 .left-section td {
-    font-size: 8px;  /* Adjust font size */
+    font-size: 6px;  /* Adjust font size */
     font-weight: bold; /* Make text bold */
     color: #333;       /* Set text color */
     margin: 1px 0;     /* Adjust spacing */
@@ -136,7 +138,7 @@ padding: 0px;
 .left-section table td:nth-child(2) {
     font-weight: bold; /* Make values bold */
     color: #333; /* Gold color */
-    font-size: 8px; /* Adjust font size */
+    font-size: 6px; /* Adjust font size */
 }
 
 
