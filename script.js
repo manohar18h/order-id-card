@@ -93,7 +93,7 @@ function printIDCard() {
             <link rel="stylesheet" href="styles.css">
             <style>
                 @page {
-                    size: 8.5cm 5.6cm;
+                    size: 8.6cm 5.6cm;
                     margin: 0;
                 }
                 body {
@@ -113,8 +113,9 @@ function printIDCard() {
                     align-items: center;
                 }
                 #idCardToPrint {
-                    width: 8.6cm;
-                    height: 5.6cm;
+                    width: 8.5cm;
+                    height: 5.5cm;
+                    border: 2px solid black;
                     padding: 5px;
                     display: flex;
                     flex-direction: column;

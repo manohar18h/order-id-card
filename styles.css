@@ -255,7 +255,7 @@ padding: 0px;
 /* Ensures the Print is Properly Sized */
 @media print {
     @page {
-        size: 8.5cm 5.6cm;
+        size: 8.6cm 5.6cm;
         margin: 0;
     }
     body * {
