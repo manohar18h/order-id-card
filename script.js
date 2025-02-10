@@ -32,6 +32,7 @@ document.getElementById("idCardForm").addEventListener("submit", function (event
     div.classList.add("id-card");
 
     div.innerHTML = `
+    <div class = "card-id-full">
         <div class="card-header">
             <img src="${logoURL}" class="logo" alt="Logo">
             <h2 class="title">Hambire JEWELLERS</h2>
@@ -67,6 +68,7 @@ document.getElementById("idCardForm").addEventListener("submit", function (event
 
         <div class="footer-note">
             Note: max. deviation +/- 0.50% as per machine specification
+        </div>
         </div>
     `;
 
