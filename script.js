@@ -113,9 +113,8 @@ function printIDCard() {
                     align-items: center;
                 }
                 #idCardToPrint {
-                    width: 8.5cm;
-                    height: 5.5cm;
-                    border: 2px solid black;
+                    width: 8.6cm;
+                    height: 5.6cm;
                     padding: 5px;
                     display: flex;
                     flex-direction: column;
