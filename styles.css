@@ -59,8 +59,9 @@ form {
 .file-label {
     display: block;
     margin-top: 15px;
-    font-weight: bold;
     text-align: left;
+    font-size: 12px;
+    padding: 3px;
 }
 
 
@@ -78,7 +79,16 @@ form {
     justify-content: space-between;
 }
 
+.pagetitle {
+    background: purple;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
 
+}
 
 .logo {
     width: 28px;
