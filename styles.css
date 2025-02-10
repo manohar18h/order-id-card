@@ -16,13 +16,7 @@ form {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-header h3 {
-height: 15px;
-background-color: black;
-color: white;
-margin: 0px;
-padding: 0px;
-}
+
 
 /* Floating Label Style */
 .input-container {
@@ -84,6 +78,17 @@ padding: 0px;
     justify-content: space-between;
 }
 
+
+
+.logo {
+    width: 28px;
+    height: 28px;
+}
+
+.qr-code {
+    width: 28px;
+    height: 28px;
+}
 /* Header Section */
 .card-header {
     display: flex;
@@ -96,21 +101,12 @@ padding: 0px;
     font-size: 6px;
 }
 
-.logo {
-    width: 28px;
-    height: 28px;
-}
-
-.qr-code {
-    width: 28px;
-    height: 28px;
-}
-
 /* Certificate Title */
 .certificate-title {
     font-size: 8px; /* Reduced size */
     font-weight: bold;
     color: red;
+    margin-top: 2px;
     text-align: center;
 }
 

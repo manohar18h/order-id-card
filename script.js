@@ -35,7 +35,7 @@ document.getElementById("idCardForm").addEventListener("submit", function (event
     <div class = "card-id-full">
         <div class="card-header">
             <img src="${logoURL}" class="logo" alt="Logo">
-            <h2 class="title">Hambire JEWELLERS</h2>
+            <h2 class="title"> HAMBIRE JEWELLERS </h2>
             <img src="qr-code.png" class="qr-code" alt="QR Code">
         </div>
 
