@@ -114,19 +114,16 @@ padding: 0px;
     text-align: center;
 }
 
-/* Card Content */
+/* ID Card Body */
 .card-body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Left section with customer details */
 .left-section {
-    width: 60%;
-    font-size: 2px; /* Further reduced text size */
-    line-height: 0; /* Reduce space between lines */
-
-    
+    width: 65%;
 }
 
 .left-section td {
@@ -239,6 +236,18 @@ padding: 0px;
     display: flex;  /* Optional: Center content inside the card */
     justify-content: center;
     align-items: center;
+}
+
+.info-table, .composition-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.info-table td, .composition-table td {
+    font-size: 10px; /* Reduce text size */
+    padding: 2px; /* Add spacing */
+    text-align: left; /* Align text properly */
 }
 
 

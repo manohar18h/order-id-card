@@ -42,13 +42,13 @@ document.getElementById("idCardForm").addEventListener("submit", function (event
 
         <div class="card-body">
             <div class="left-section">
-                <table>
-                    <tr><td>Customer Name :</td><td>${customerName}</td></tr><br>
-                    <tr><td>Certificate No :</td><td>${certificateNo}</td></tr><br>
-                    <tr><td>Date :</td><td>${date}</td></tr><br>
-                    <tr><td>Product Name :</td><td>${productName}</td></tr><br>
-                    <tr><td>Product Weight :</td><td>${productWeight}g</td></tr><br>
-                    <tr><td>Product Karat :</td><td>${productKarat}K</td></tr>
+                <table class="info-table">
+                    <tr><td><strong>Customer Name:</strong></td><td>${customerName}</td></tr>
+                    <tr><td><strong>Certificate No:</strong></td><td>${certificateNo}</td></tr>
+                    <tr><td><strong>Date:</strong></td><td>${date}</td></tr>
+                    <tr><td><strong>Product Name:</strong></td><td>${productName}</td></tr>
+                    <tr><td><strong>Product Weight:</strong></td><td>${productWeight}g</td></tr>
+                    <tr><td><strong>Product Karat:</strong></td><td>${productKarat}K</td></tr>
                 </table>
             </div>
             <div class="right-section">
