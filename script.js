@@ -95,7 +95,7 @@ function printIDCard() {
             <link rel="stylesheet" href="styles.css">
             <style>
                 @page {
-                    size: 8.6cm 5.6cm;
+                    size: 8cm 5.5cm;
                     margin: 0;
                 }
                 body {

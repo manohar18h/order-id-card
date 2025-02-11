@@ -263,7 +263,7 @@ form {
 /* Ensures the Print is Properly Sized */
 @media print {
     @page {
-        size: 8.6cm 5.6cm;
+        size: 8cm 5.5cm;
         margin: 0;
     }
     body * {
@@ -276,7 +276,7 @@ form {
         position: absolute;
         left: 0;
         top: 0;
-        width: 8.5cm;
+        width: 8cm;
         height: 5.5cm;
     }
 }
@@ -324,6 +324,3 @@ form {
     box-shadow: none;
     transform: translateY(0);
    }
-   
-
-
