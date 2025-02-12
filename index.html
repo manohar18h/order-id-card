@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
     <title >Hambire Jewellery Order Certificate Card</title>
 
 </head>
@@ -42,7 +44,7 @@
             <label for="productKarat">Product Karat</label>
         </div>
     
-        <div class="input-container">
+        <div class="input-container"> 
             <input type="number" id="goldPercentage" required>
             <label for="goldPercentage">Gold %</label>
         </div>
@@ -70,6 +72,7 @@
     <div class="container-grid">
     <div class="card-grid" id="idCardGrid"></div><br>
 </div><br><br>
-<button class="button"  id="printButton" onclick="printIDCard()">Print ID Card</button>
+<button class="button"  id="printButton" onclick="downloadIDCard()">Download ID Card</button>
+
 </body>
 </html>

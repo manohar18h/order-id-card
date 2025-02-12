@@ -259,27 +259,29 @@ form {
 }
 
 
+/* .id-card {
+    width: 8.5cm;
+    height: 5.5cm;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-/* Ensures the Print is Properly Sized */
-@media print {
-    @page {
-        size: 8cm 5.5cm;
-        margin: 0;
-    }
-    body * {
-        visibility: hidden;
-    }
-    .print-container, .print-container * {
-        visibility: visible;
-    }
-    .print-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 8cm;
-        height: 5.5cm;
+body {
+    background: #f4f4f4;
+} */
+
+/* Ensure the ID card captures properly */
+@media screen {
+    .id-card {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
 }
+
 
 .button {
     appearance: none;

@@ -77,67 +77,22 @@ document.getElementById("idCardForm").addEventListener("submit", function (event
     // Add Print Button Outside the Grid to Prevent Overwriting
 });
 
-// Function to Print Only the ID Card
-function printIDCard() {
-    const idCardContent = document.getElementById("idCardGrid").innerHTML;
+// Function to capture and download the ID card as JPG
+function downloadIDCard() {
+    const idCard = document.querySelector(".id-card"); // Select the ID card
 
-    if (!idCardContent.trim()) {
-        alert("No ID Card available to print.");
+    if (!idCard) {
+        alert("No ID Card available to download.");
         return;
     }
 
-    const printWindow = window.open('', '_blank', 'width=340,height=220');
-
-    printWindow.document.write(`
-        <html>
-        <head>
-            <title>Print ID Card</title>
-            <link rel="stylesheet" href="styles.css">
-            <style>
-                @page {
-                    size: 8cm 5.5cm;
-                    margin: 0;
-                }
-                body {
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                    background-color: white;
-                }
-                .print-container {
-                    width: 8.5cm;
-                    height: 5.5cm;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                #idCardToPrint {
-                    width: 8.5cm;
-                    height: 5.5cm;
-                    border: 2px solid black;
-                    padding: 5px;
-                    display: flex;
-                    flex-direction: column;
-                    font-family: Arial, sans-serif;
-                    background-color: white;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="print-container">
-                <div id="idCardToPrint">${idCardContent}</div>
-            </div>
-            <script>
-                setTimeout(function() {
-                    window.print();
-                    window.close();
-                }, 500);
-            </script>
-        </body>
-        </html>
-    `);
-    printWindow.document.close();
+    html2canvas(idCard, { scale: 3 }).then(canvas => {  // Higher scale for better quality
+        const image = canvas.toDataURL("image/jpeg", 1.0); // Convert to JPG format
+        const link = document.createElement("a");
+        link.href = image;
+        link.download = "ID_Card.jpg";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
 }
