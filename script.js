@@ -79,20 +79,24 @@ document.getElementById("idCardForm").addEventListener("submit", function (event
 
 // Function to capture and download the ID card as JPG
 function downloadIDCard() {
-    const idCard = document.querySelector(".id-card"); // Select the ID card
 
-    if (!idCard) {
-        alert("No ID Card available to download.");
-        return;
-    }
+    window.location.href = "qrcode.html";
 
-    html2canvas(idCard, { scale: 3 }).then(canvas => {  // Higher scale for better quality
-        const image = canvas.toDataURL("image/jpeg", 1.0); // Convert to JPG format
-        const link = document.createElement("a");
-        link.href = image;
-        link.download = "ID_Card.jpg";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
+
+    // const idCard = document.querySelector(".id-card"); // Select the ID card
+
+    // if (!idCard) {
+    //     alert("No ID Card available to download.");
+    //     return;
+    // }
+
+    // html2canvas(idCard, { scale: 3 }).then(canvas => {  // Higher scale for better quality
+    //     const image = canvas.toDataURL("image/jpeg", 1.0); // Convert to JPG format
+    //     const link = document.createElement("a");
+    //     link.href = image;
+    //     link.download = "ID_Card.jpg";
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // });
 }
