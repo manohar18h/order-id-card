@@ -1,78 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-    <title >Hambire Jewellery Order Certificate Card</title>
+    <title>Hambire Jewellery Order Certificate Card</title>
+  </head>
+  <body>
+    <h1 class="pagetitle">
+      Hambire Jewellery Order Certificate Card Generator
+    </h1>
 
-</head>
-<body>
-    <h1 class="pagetitle">Hambire Jewellery Order Certificate Card Generator</h1>
-    
     <form id="idCardForm">
-        <div class="input-container">
-            <input type="text" id="customerName" required>
-            <label for="customerName">Customer Name</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="number" id="certificateNo" required>
-            <label for="certificateNo">Certificate No</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="date" id="date" required>
-            <label for="date">Date</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="text" id="productName" required>
-            <label for="productName">Product Name</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="number" id="productWeight" required>
-            <label for="productWeight">Product Weight</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="number" id="productKarat" required>
-            <label for="productKarat">Product Karat</label>
-        </div>
-    
-        <div class="input-container"> 
-            <input type="number" id="goldPercentage" required>
-            <label for="goldPercentage">Gold %</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="number" id="silverPercentage" required>
-            <label for="silverPercentage">Silver %</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="number" id="copperPercentage" required>
-            <label for="copperPercentage">Copper %</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="number" id="othersPercentage" required>
-            <label for="othersPercentage">Others %</label>
-        </div>
-    
-        <label class="file-label">Item Image</label>
-        <input type="file" id="customerUpload" accept="image/*"><br>
-    
-        <button type="submit">Generate ID Card</button><br>
+      <div class="input-container">
+        <input type="text" id="customerName" required />
+        <label for="customerName">Customer Name</label>
+      </div>
+
+      <div class="input-container">
+        <input type="number" id="certificateNo" required />
+        <label for="certificateNo">Certificate No</label>
+      </div>
+
+      <div class="input-container">
+        <input type="date" id="date" required />
+        <label for="date">Date</label>
+      </div>
+
+      <div class="input-container">
+        <input type="text" id="productName" required />
+        <label for="productName">Product Name</label>
+      </div>
+
+      <div class="input-container">
+        <input type="number" id="productWeight" step="0.0001" required />
+        <label for="productWeight">Product Weight</label>
+      </div>
+
+      <div class="input-container">
+        <input type="number" id="productKarat" required />
+        <label for="productKarat">Product Karat</label>
+      </div>
+
+      <div class="input-container">
+        <input type="number" id="goldPercentage" step="0.01" required />
+        <label for="goldPercentage">Gold </label>
+      </div>
+
+      <label class="file-label">Item Image</label>
+      <input type="file" id="customerUpload" accept="image/*" /><br />
+
+      <button type="submit">Generate ID Card</button><br />
     </form>
     <div class="container-grid">
-    <div class="card-grid" id="idCardGrid"></div><br>
-</div><br><br>
-<button class="button"  id="printButton" onclick="downloadIDCard()">Download ID Card</button>
-
-</body>
+      <div class="card-grid" id="idCardGrid"></div>
+      <br />
+    </div>
+    <br /><br />
+    <button class="button" id="printButton" onclick="downloadIDCard()">
+      Download ID Card
+    </button>
+  </body>
 </html>

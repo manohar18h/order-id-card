@@ -1,263 +1,254 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #f4f4f4;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+  background: #fffbf8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* Floating Label Style */
 .input-container {
-    position: relative;
-    margin: 10px 0;
+  position: relative;
+  margin: 10px 0;
 }
 
 .input-container input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    background: none;
-    outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background: none;
+  outline: none;
 }
 
 .input-container label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
-    color: #999;
-    transition: all 0.3s ease;
-    pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
 /* Move label up when input is focused or has text */
 .input-container input:focus + label,
 .input-container input:not(:placeholder-shown) + label {
-    top: -12px;
-    left: 10px;
-    font-size: 12px;
-    color: #007bff;
-    background: white;
-    padding: 0 5px;
+  top: -12px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+  background: #fffbf8;
+  padding: 0 5px;
 }
 
 /* Styling for File Upload Labels */
 .file-label {
-    display: block;
-    margin-top: 15px;
-    text-align: left;
-    font-size: 12px;
-    padding: 3px;
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 12px;
+  padding: 3px;
 }
 
-
-
-.id-card .card-id-full{
-    width: 8.5cm;
-    height: 5.5cm;
-    border: 2px solid black;
-    padding: 3px;
-    background-color: white;
-    font-size: 6px; /* Reduced global font size */
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.id-card .card-id-full {
+  width: 8.5cm;
+  height: 5.5cm;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 3px;
+  background-color: #fffbf8;
+  font-size: 6px; /* Reduced global font size */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .pagetitle {
-    background: purple;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-
+  background: purple;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fffbf8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .logo {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 .qr-code {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 /* Header Section */
 .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: purple;
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-    font-size: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #573e36;
+  color: #fffbf8;
+  padding: 2px;
+  border-radius: 3px;
+  font-size: 6px;
 }
 
 /* Certificate Title */
 .certificate-title {
-    font-size: 8px; /* Reduced size */
-    font-weight: bold;
-    color: red;
-    margin-top: 2px;
-    text-align: center;
+  font-size: 8px; /* Reduced size */
+  font-weight: bold;
+  color: rgb(255, 106, 0);
+  margin-top: 2px;
+  text-align: center;
 }
 
 /* ID Card Body */
 .card-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Left section with customer details */
 .left-section {
-    width: 65%;
-    margin-top: -3px;
+  width: 80%;
+  margin-top: -3px;
 }
 
 .left-section td {
-    font-size: 6px;  /* Adjust font size */
-    font-weight: bold; /* Make text bold */
-    color: #333;       /* Set text color */
-    margin: 1px 0;     /* Adjust spacing */
+  font-size: 6px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  color: #333; /* Set text color */
+  margin: 1px 0; /* Adjust spacing */
 }
 
 .left-section table td:nth-child(2) {
-    font-weight: bold; /* Make values bold */
-    color: #333; /* Gold color */
-    font-size: 6px; /* Adjust font size */
+  font-weight: bold; /* Make values bold */
+  color: #333; /* Gold color */
+  font-size: 6px; /* Adjust font size */
 }
-
 
 /* Right section with profile image */
 .right-section {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 30%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
 .profile-img {
-    width: 80px; /* Adjusted size */
-    height: 80px;
-    object-fit: cover;
-    border: 1px solid black;
+  width: 80px; /* Adjusted size */
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 /* Composition Section */
 /* Composition Section */
 .composition {
-    font-weight: bold;
-    border: 2px solid black;
-    background-color: white;
-    font-size: 8px; /* Reduced size */
-    width: 60%;
-    color: red;
-    text-align: left; /* Align text to left */
-    padding: 1px; /* Add padding for better spacing */
-    margin-left: 2; /* Align to the left */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Ensure the content starts at the top */
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: #fffbf8;
+  font-size: 8px;
+  width: 50%;
+  color: #573e36;
+  text-align: left;
+  margin-left: 2px;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: start; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  height: 15px; /* Optional: adjust as needed */
 }
 
-.composition td {
-    font-size: 8px;  /* Adjust font size */
-    font-weight: bold; /* Make text bold */
-    margin: 1px 0;  
-    color: red;   
-}
 /* Vertical Line */
 .harizontal-line {
-    width: 60%; /* Adjust thickness */
-    margin-left: 1; /* Align to the left */
-    text-align: left; /* Align text to left */
-    background-color: black; /* Change color if needed */
-    height: 1px; /* Makes it stretch the entire section height */
-    margin: 0 10px; /* Adds spacing */
+  width: 60%; /* Adjust thickness */
+  margin-left: 1; /* Align to the left */
+  text-align: left; /* Align text to left */
+  background-color: black; /* Change color if needed */
+  height: 1px; /* Makes it stretch the entire section height */
+  margin: 0 10px; /* Adds spacing */
 }
 
-
-.composition table td:nth-child(2) {
-    font-weight: bold; /* Make values bold */
-    color: red; /* Gold color */
-    font-size: 8px; /* Adjust font size */
+.composition table {
+  margin: 0;
+  padding: 0;
 }
-
-/* .composition p {
-    margin: 0;
-
-} */
+.composition td {
+  font-size: 8px;
+  font-weight: bold;
+  color: rgb(255, 106, 0);
+  padding-bottom: 2px;
+  padding-left: 8px;
+}
 
 /* Footer */
 .footer-note {
-    font-size: 8px; /* Further reduced text size */
-    text-align: center;
-    background: purple;
-    margin-top: 2px;
-    border-top: 1px solid black;
-    padding-top: 1px;
-    color: white;
-    padding: 2px;
-    border-radius: 3px;
-    font-size: 6px;
+  font-size: 8px; /* Further reduced text size */
+  text-align: center;
+  background: #573e36;
+  border-top: 1px solid rgb(255, 255, 255);
+  color: #fffbf8;
+  padding: 2px;
+  justify-content: start; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  border-radius: 3px;
+  padding-bottom: 5px;
+  font-size: 6px;
 }
 
 /* Table styling for compressed customer details */
 .card-content table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 2px; /* Reduced size */
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 2px; /* Reduced size */
 }
 
 .card-content td {
-    padding: 0px;
-    font-size: 2px;
+  padding: 0px;
+  font-size: 2px;
 }
 
 .container-grid {
-    display: flex;
-    justify-content: center;  /* Centers horizontally */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
 }
 .card-grid {
-    background-color: #f5f5f5;
-    display: flex;  /* Optional: Center content inside the card */
-    justify-content: center;
-    align-items: center;
+  background-color: #f5f5f5;
+  display: flex; /* Optional: Center content inside the card */
+  justify-content: center;
+  align-items: center;
 }
 
-.info-table, .composition-table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
+.info-table,
+.composition-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
-.info-table td, .composition-table td {
-    font-size: 10px; /* Reduce text size */
-    padding: 2px; /* Add spacing */
-    text-align: left; /* Align text properly */
+.info-table td,
+.composition-table td {
+  font-size: 10px; /* Reduce text size */
+  padding: 2px; /* Add spacing */
+  text-align: left; /* Align text properly */
 }
-
 
 /* .id-card {
     width: 8.5cm;
@@ -277,52 +268,52 @@ body {
 
 /* Ensure the ID card captures properly */
 @media screen {
-    .id-card {
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
+  .id-card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
-
 .button {
-    appearance: none;
-    background-color: transparent;
-    border: 0.125em solid #1A1A1A;
-    border-radius: 0.9375em;
-    box-sizing: border-box;
-    color: #000000;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 10px;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    min-height: 2.5em;
-    min-width: 0;
-    outline: none;
-    margin-bottom: 500px;
-    padding: 1em 2.3em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    will-change: transform;
-   }
-   
-   .button:disabled {
-    pointer-events: none;
-   }
-   
-   .button:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
-   
-   .button:active {
-    box-shadow: none;
-    transform: translateY(0);
-   }
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1a1a1a;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  min-height: 2.5em;
+  min-width: 0;
+  outline: none;
+  margin-bottom: 500px;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
