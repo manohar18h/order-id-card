@@ -98,7 +98,7 @@ document
 </tr>
 <tr>
   <td>
-    <strong style="font-weight: 600;">Gold Purity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
+    <strong style="font-weight: 600;">Gold Purity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
   </td>
   <td style="padding-left: 10px;">
     <span style="font-weight: 600; font-size: 8px;">${goldPercentage}</span>
