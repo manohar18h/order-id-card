@@ -5,6 +5,7 @@ document
 
     // Get input values
     const customerName = document.getElementById("customerName").value;
+    const village = document.getElementById("village").value;
     const certificateNo = document.getElementById("certificateNo").value;
     const rawDate = document.getElementById("date").value;
     const [year, month, day] = rawDate.split("-");
@@ -53,6 +54,15 @@ document
   </td>
   <td style="padding-left: 10px;">
     <span style="font-weight: 600; font-size: 8px;">${customerName}</span>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <strong style="font-weight: 600;">Village  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>
+  </td>
+  <td style="padding-left: 10px;">
+    <span style="font-weight: 600; font-size: 8px;">${village}</span>
   </td>
 </tr>
 
